@@ -1,0 +1,192 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #ffffff;
+        font-family: inherit;
+      }
+
+      .azul {
+        background: hsla(240, 100%, 54%, 0.781);
+        color: White;
+        text-align: left;
+        height: 30;
+      }
+       
+      label {
+        color: #9e9e9e;
+        text-align: left;
+      
+        
+    
+      }
+
+      .inicio {
+        background: rgba(46, 46, 255, 0.911);
+        color: rgb(255, 255, 255);
+        border: 0px;
+        height: 35px;
+      }
+    input {
+      height: 35;
+    }
+
+
+      button {
+        background: rgb(6, 182, 0);
+        color: white;
+        border: 0px;
+        text-align: center;
+        width: 170px;
+        height: 50px;
+      margin-top: 10px;
+      margin-bottom: 1; 
+      }
+      article {
+      
+        background: rgb(228, 225, 225);
+        margin: 0;
+        width: 600px;
+        height: 300;
+        margin: auto;
+      }
+      #o {
+        text-align: center;
+        margin-top: 5px;
+      
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      .nana {
+        text-align: left;
+      }
+      .cerrar {
+        background-color: #9e9e9e;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+      }
+
+    </style>
+  </head>
+    <body>
+            <article>
+                    <h1 class="azul">Facebook</h1>
+    
+      <div>
+      <label> Phone number or email
+        <div>
+        <input style="width:100%" type width="email"
+        name="email" requerid>
+        </div>
+        </label>
+        </div>
+        <div>
+          <label for="contrasena">Password</label>
+          <div>
+          <input style="width:100%" type="password" id="contrasena"
+          name="contrasena">
+          </div>
+        </div>
+        <button style="width:100%" class="Inicio">
+          Log in
+        </button>
+    <article id="o">
+        <div>
+      <small>or</small>
+    </div>
+    <dialog id="dialog">
+        <h1 class="crear">Sing Up</h1>
+        <p> It's quick and easy</p>
+        <input 
+        type="name"
+        name="name"
+        placeholder="Firt Name">
+        <input 
+        type="name"
+        name="apellido"
+        placeholder="Last Name">
+        <div>
+         <input class="nana"
+         type="tel"
+         name="phone"
+         placeholder="Mobile number or email">
+        </div>
+        <div>
+            <input class="nana" type="password" id="contrasena"
+            name="contrasena" placeholder="New password">
+        </div>
+        <div>
+        <label class="nana" for="why">birthiday</label>
+        <div>
+        <select name="why" id="why">
+            <option value="1">Enero</option>
+            <option value="2">Febero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+            </select>
+        <select id="diasnacimiento"></select>
+        <script>
+            var select = document.getElementById("diasnacimiento");
+          
+          for (var i = 1; i <= 31; i++) {
+              var option = document.createElement("option");
+              option.value = i;
+              option.text = i;
+              select.add(option);
+          }
+              </script>
+              <select id="anonacimiento"></select>
+              <script>
+                  var select = document.getElementById("anonacimiento")
+                for (var i = 1980; i <= 2005; i++) {
+                    var option = document.createElement("option");
+                    option.value = i;
+                    option.text = i;
+                    select.add(option);
+                }
+                    </script>
+              
+        </div>
+    </div>
+        <button>Sing Up</button>
+        
+        <div><button class="cerrar" id="hide">X</button></div>
+    </div>
+
+    </dialog>
+    <button id="show"> Create new account</button>
+    <script>
+window.show.addEventListener('click',() => {
+window.dialog.showModal()
+})
+
+window.hide.addEventListener('click', () => {
+    window.dialog.close()
+})
+    </script>
+    <div>
+    <small>
+      <a id="forget1" href="Forget Password">Forget Password?</a>
+      </small>
+  </div>
+  </article>
+
+</article>
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,168 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+        }  
+
+.container {
+background-color: white;
+position: left;
+width: 600px;
+border-radius: 5px;
+padding: 30px;
+
+}  
+.Titulo {
+    color: rgb(230, 155, 108);
+    text-align: center;
+    font-size: 20;
+    margin-bottom: 29;
+} 
+ .text {
+    background-color: rgb(246, 237, 232);
+    width: 99%;
+    height: 60px;
+    margin-left: 1px;
+    font-size: 18px;
+    color: rgb(66, 65, 67);
+    border: 1px solid rgb(243, 239, 237);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.name{
+    display: flex;
+    font-size: 13px;
+    margin-bottom: 15;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left:18;
+}
+.first label {
+    margin-bottom: 8;
+}
+
+.last label {
+    margin-bottom: 8;
+}
+
+.last{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+    .otros {
+        height: 45;
+        width: 94%;
+        margin-left: 18px;
+        border: 2px solid rgb(214, 214, 214);
+        border-radius: 4px;
+        margin-bottom: 15;
+        margin-top: 8;
+
+    } 
+    .email{
+        font-size: 13px;
+        margin-left: 18;
+    } 
+    
+    .pregunta{
+        font-size: 13;
+        margin-left: 18;
+    }
+
+    .respuesta {
+        margin-top: 12;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+
+    .sign button {
+        background-color: rgb(228, 159, 110);
+        color: white;
+        width: 94%;
+        height: 80;
+        border: 1px solid rgb(215, 164, 129);
+        border-radius: 3px;
+        margin-left: 18;
+        margin-top: 30;
+        margin-bottom: 30;
+        font-size: 20;
+        font-style: unset;
+    }
+
+    </style>
+
+</head>
+<body>
+<section class="container">
+    <h1 class="Titulo">YourCompany</h1>
+
+        <h2 class="text">Webinar Registration</h2>
+       
+    <div class="formulario">
+        <div class="name">
+        <div class="FIrst">
+            <label>First Name </label>
+            <input placeholder="First Name" style="width: 94%; height: 45; border-radius: 4px; border-color: rgb(214, 214, 214); border-style: solid;">
+        </div>
+        <div class="Last">
+            <label> Last Name</label>
+            <input  placeholder="Last Name" style="width: 94%; height: 45; border-radius: 4px; border-color: rgb(214, 214, 214); border-style: solid;">
+        </div>
+    </div>
+    <div>
+        <Label class="email">Email Address</Label>
+            <div>
+                <input class="otros" placeholder="Email Address"></div>
+            </div>
+            <div>
+        <label class="email"> Company</label>
+             <div><input class="otros" placeholder="Company" ><div>
+    </div>
+</div>
+
+<div class="pregunta">
+    <label> How did you hear about the webinar?</label>
+    <div class="respuesta">
+        <input class="inputs" type="radio" name="respuesta" value="opcion1" >
+        <label>Social Media</label>
+        <input class="inputs" type="radio" name="respuesta" value="opcion2">
+        <label>Word of Mouth</label>
+        <input class="inputs" type="radio" name="respuesta" value="opcion3">
+        <label>advertisement</label>
+        <input class="inputs" type="radio" name="respuesta" value="opcion4">
+        <label>Other</label>
+    </div>
+
+</div>
+
+   <div class="Sign">
+    <button>Sign Up Today!</button>
+   </div>
+
+
+
+
+
+
+
+
+
+    </section>
+    </body>
+
+
+</html>
