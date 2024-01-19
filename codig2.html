@@ -34,24 +34,22 @@ padding: 30px;
     margin-bottom: 19px;
 }
 
+form {
+margin-left: 10;
+margin-right: 10;
+}
+
 .name{
     display: flex;
     font-size: 13px;
-    margin-bottom: 15;
+    gap: 10px;
 }
 
 .first {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-left:18;
-}
-.first label {
-    margin-bottom: 8;
-}
 
-.last label {
-    margin-bottom: 8;
 }
 
 .last{
@@ -61,47 +59,71 @@ padding: 30px;
 }
 
 
-    .otros {
+    .input {
         height: 45;
-        width: 94%;
-        margin-left: 18px;
         border: 2px solid rgb(214, 214, 214);
         border-radius: 4px;
         margin-bottom: 15;
         margin-top: 8;
+        
 
     } 
     .email{
         font-size: 13px;
-        margin-left: 18;
     } 
     
     .pregunta{
         font-size: 13;
-        margin-left: 18;
     }
 
     .respuesta {
         margin-top: 12;
         display: flex;
-        justify-content: space-evenly;
+        gap: 45px;
         align-items: center;
     
     }
 
-    .sign button {
+    button {
         background-color: rgb(228, 159, 110);
         color: white;
-        width: 94%;
+        width: 100%;
         height: 80;
         border: 1px solid rgb(215, 164, 129);
         border-radius: 3px;
-        margin-left: 18;
         margin-top: 30;
         margin-bottom: 30;
         font-size: 20;
-        font-style: unset;
+        font-weight: bold;
+        word-spacing: -1;
+    
+        
+    
     }
+
+
+    .inputs:hover{
+        cursor: pointer;
+    }
+
+    .inputs {
+        accent-color: red;
+    }
+  
+    
+
+    button:hover{
+        cursor: pointer;
+    }
+    button:active {
+        color: black;
+    }
+
+    .input::placeholder {
+        padding-left: 14;
+    }
+    
+
 
     </style>
 
@@ -110,48 +132,63 @@ padding: 30px;
 <section class="container">
     <h1 class="Titulo">YourCompany</h1>
 
-        <h2 class="text">Webinar Registration</h2>
+    <h2 class="text">Webinar Registration</h2>
        
-    <div class="formulario">
+    <form>
         <div class="name">
-        <div class="FIrst">
-            <label>First Name </label>
-            <input placeholder="First Name" style="width: 94%; height: 45; border-radius: 4px; border-color: rgb(214, 214, 214); border-style: solid;">
-        </div>
-        <div class="Last">
-            <label> Last Name</label>
-            <input  placeholder="Last Name" style="width: 94%; height: 45; border-radius: 4px; border-color: rgb(214, 214, 214); border-style: solid;">
-        </div>
-    </div>
-    <div>
-        <Label class="email">Email Address</Label>
-            <div>
-                <input class="otros" placeholder="Email Address"></div>
+            <div class="FIrst">
+                <label>First Name </label>
+                <input placeholder="First Name" class="input">
             </div>
-            <div>
-        <label class="email"> Company</label>
-             <div><input class="otros" placeholder="Company" ><div>
-    </div>
-</div>
+            <div class="first">
+                <label> Last Name</label>
+                <input  placeholder="Last Name" class="input">
+            </div>
+        </div>
 
-<div class="pregunta">
-    <label> How did you hear about the webinar?</label>
-    <div class="respuesta">
-        <input class="inputs" type="radio" name="respuesta" value="opcion1" >
-        <label>Social Media</label>
-        <input class="inputs" type="radio" name="respuesta" value="opcion2">
-        <label>Word of Mouth</label>
-        <input class="inputs" type="radio" name="respuesta" value="opcion3">
-        <label>advertisement</label>
-        <input class="inputs" type="radio" name="respuesta" value="opcion4">
-        <label>Other</label>
-    </div>
+        <div class="first">
+            <Label class="email">Email Address</Label>  
+            <input class="input" placeholder="Email Address">
+        </div>
 
-</div>
+        <div class="first">
+            <label class="email"> Company</label>
+            <input class="input" placeholder="Company" >
+        </div>
+        
+        <div class="pregunta">
+            <label> How did you hear about the webinar?</label>
+            
+            <div class="respuesta">
+                <div>
+                    <input class="inputs" type="radio" name="respuesta" value="opcion1" >
+                    <label>Social Media</label>
+                </div>
+                <div>   
+                    <input class="inputs" type="radio" name="respuesta" value="opcion2">
+                    <label>Word of Mouth</label>
+                </div>
+                <div>
+                    <input class="inputs" type="radio" name="respuesta" value="opcion3">
+                    <label>Advertisement</label>
+                </div>
+                <div>
+                <div>    
+                    <input class="inputs" type="radio" name="respuesta" value="opcion4">
+                    <label>Other</label>
+                </div>    
+            </div>
+        
+        </div>
+        
 
-   <div class="Sign">
-    <button>Sign Up Today!</button>
-   </div>
+                <button>Sign Up Today!</button>
+
+
+
+    </form>
+
+
 
 
 
