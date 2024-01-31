@@ -1,0 +1,371 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+headers {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.direccionA {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.contact {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+}
+
+.division {
+    color: #EEEEEE;
+    opacity: 50%;
+}
+
+headers a:hover {
+
+cursor: pointer;
+scale: 1.1;
+color: rgb(38, 132, 255);
+
+}
+ .titulo {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0;
+}
+
+.menu {
+width: 40px;
+height: 10px;  
+}
+
+/* MENUS DESPLEGABLE */
+
+.menus {
+    position: relative;
+    display: inline-block;
+  }
+
+.menu-desplegado {
+display: none;
+background-color: transparent;
+z-index: 1;
+}
+
+.menus:hover .menu-desplegado {
+    display: block;
+    cursor: pointer;
+}
+
+.menu-desplegado a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-desplegado a:hover {
+    color: #0F6FCE;
+    cursor: pointer;
+}
+
+.menu hr {
+color: rgb(32, 121, 209);
+border: 2px solid rgb(32, 121, 209);
+border-radius: 4px;
+margin: 4px;
+
+}
+
+.imglogo {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 6px;
+}
+
+.imglogo img {
+width: 14px;
+height: 14px;
+}
+
+.titulo img {
+width: 40px;
+height: 35px;
+}
+
+
+/* MENUS DESPLEGABLE */
+
+
+
+.container {
+background-image: url("https://cdn-gfmhl.nitrocdn.com/JtDqtOWnKLCtGwmyHnwRfOFfiuBVgrda/assets/images/optimized/rev-8cc6ff9/russell6437.wpenginepowered.com/wp-content/uploads/2020/04/What-Is-An-Orthopedic-Doctor-In-Brooklyn.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+height: 400px;
+margin-top: 0;
+overflow: hidden;
+position: relative;
+
+
+}
+
+.container img {
+background-color: black;
+width: 100%;
+height: 400px;
+opacity: 60%;
+
+}
+
+.container h1 {
+font-size: 35px;
+width: 100%;
+margin: 0;
+}
+
+
+.botones {
+display: flex;
+gap: 15px;
+}
+
+.Bderecha {
+position: absolute;
+bottom: 30%;
+border-radius: 100%;
+border: 1 solid #0f6fce;
+background-color: #0F6FCE;
+width: 50px;
+height: 50px;
+font-size: 20px;
+color: white;
+display: none;
+}
+
+.Bizquierda {
+position: absolute;
+bottom: 30%;
+border-radius: 100%;
+border: 1 solid #0f6fce;
+background-color: #0F6FCE;
+width: 50px;
+height: 50px;
+font-size: 20px;
+color: white;
+right: 0;
+display: none;
+
+}
+
+
+.botonF {
+background-color: #1B76D1;
+width: 160px;
+height: 50px;
+color: white;
+border: 1px solid #1b76d1;
+border-radius: 4px;
+font-weight: bold;
+transition: 1s;
+}
+
+.botonF:last-child {
+width: 140px ;
+background-color: #2C2D3F;
+border-color: #2C2D3F;
+
+}
+
+.botonF:hover {
+scale: 1.1;
+background-color: aliceblue;
+color: black;
+cursor: pointer;
+border: 1px solid aliceblue;
+box-shadow: 0 0 16px #1b76d1;
+
+}
+
+
+span {
+color: #0F6FCE;
+}
+.contenido {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+}
+
+/*OCULTOS*/
+.menugrande {
+display: none;
+}
+.botonI {
+display: none;
+}
+
+
+/*OCULTOS*/
+
+@media (min-width:810px) {
+
+.menu {
+display: none;
+}
+
+.direccionA {
+justify-content: flex-start;
+position: relative;
+top: 20px;
+}
+
+.contact {
+display: flex;
+justify-content: flex-end;
+position: relative;
+bottom: 30px;
+}
+
+.menugrande {
+display: flex;
+justify-content: center;
+gap: 30px;
+align-items: center;
+}
+
+.menugrande a:hover {
+scale: 1.1;
+color:#0F6FCE;
+font-weight: bold;
+border-bottom: 20px solid green;
+}
+
+.menugrander a {
+height: 100%;
+}
+
+.container {
+margin-top: 0;
+}
+
+hr {
+margin: 0;
+}
+
+
+
+
+
+headers a:hover {
+
+cursor: pointer;
+scale: 1.1;
+color: rgb(38, 132, 255);
+}
+
+
+.titulo {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contenido {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+}
+
+@media (min-width:1300px) {
+
+    .contenido {
+        margin-left: 10%;
+    }
+
+.direccionA a:hover {
+
+cursor: pointer;
+scale: 1.1;
+color: rgb(38, 132, 255);
+}
+
+.container {
+
+margin: 0;
+
+}
+
+.contenido {
+margin-left: 10%;
+}
+
+
+
+.menugrande {
+left: 250px;
+}
+
+.botonI {
+display: block;
+text-align: center;
+background-color: #1b76d1;
+border: 1px solid #1B76D1;
+width: 170px;
+height: 50px;
+color: white;
+border-radius: 4px;
+font-weight: bold;
+transition: 1s;
+
+}
+
+.botonI:hover {
+scale: 1.1;
+color: black;
+background-color: white;
+border: 1px solid white;
+box-shadow: 0 0 16px rgb(165, 163, 163);
+
+}
+
+headers {
+height: 50px;
+gap: 0;
+}
+
+.container h1 {
+width: 527px;
+}
+.container p {
+width: 651px;
+}
+
+.contact {
+bottom: 0;
+}
+
+
+.Bizquierda {
+    display: block;
+}
+
+.Bderecha {
+    display: block;
+}
+
+
+}
